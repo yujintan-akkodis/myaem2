@@ -47,6 +47,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <spa.project.core.version>1.3.16</spa.project.core.version>
     <componentGroupName>My Second AEM Local Project</componentGroupName>
+    <aem.uber.version>6.5.24</aem.uber.version>
   </properties>
   <build>
     <plugins>
