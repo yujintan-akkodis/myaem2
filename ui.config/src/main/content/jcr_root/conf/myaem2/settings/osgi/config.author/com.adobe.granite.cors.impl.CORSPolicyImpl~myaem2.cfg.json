@@ -1,0 +1,27 @@
+{
+  "supportscredentials": true,
+  "allowedmethods": [
+    "GET",
+    "HEAD",
+    "POST",
+    "OPTIONS"
+  ],
+  "alloworigin": [
+    "http://localhost:3000"
+  ],
+  "allowedheaders": [
+    "authorization",
+    "content-type",
+    "x-requested-with",
+    "accept"
+  ],
+  "exposedheaders": [
+    "Content-Type",
+    "Authorization",
+    "X-Requested-With"
+  ],
+  "maxage": "3600",
+  "allowedpaths": [
+    "/content/myaem2/.*"
+  ]
+}
