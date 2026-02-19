@@ -1,4 +1,8 @@
-/* Make hero container behave like a layered block */
+/* Hero container */
+.cmp-teaser__title {
+  line-height: 1; /* stable before hero styles override it */
+}
+
 .cmp-teaser--hero {
   position: relative;
   width: 100%;
@@ -6,8 +10,7 @@
   overflow: hidden;
 }
 
-/* Make the image fill the whole area */
-.cmp-teaser--hero .cmp-teaser__image,
+/* Full-bleed image */
 .cmp-teaser--hero .cmp-teaser__image img {
   position: absolute;
   inset: 0;
@@ -16,32 +19,36 @@
   object-fit: cover;
 }
 
-/* Add a dark gradient overlay to improve text contrast */
+/* Dark overlay */
 .cmp-teaser--hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.7)
-  );
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
   z-index: 1;
 }
 
-/* Move text *over* the image */
+/* Text overlay positioning */
 .cmp-teaser--hero .cmp-teaser__content {
-  position: relative;
-  z-index: 2;   /* ABOVE image overlay */
-  color: #fff;
-  padding: 3rem;
-  max-width: 60rem;
-  bottom: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 2;
 }
 
-/* Optional: Make title large like Army Jobs hero */
+/* Hero title */
 .cmp-teaser--hero .cmp-teaser__title {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  margin: 0;
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Make the anchor white */
+.cmp-teaser--hero .cmp-teaser__title-text a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "BebasNeue", sans-serif;
 }

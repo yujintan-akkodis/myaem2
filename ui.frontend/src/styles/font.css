@@ -1,0 +1,16 @@
+/* ===========================================
+   Custom Font: Hero
+   =========================================== */
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional class to quickly apply it */
+.hero-font {
+  font-family: "BebasNeue", sans-serif;
+}
