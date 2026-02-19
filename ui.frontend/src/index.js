@@ -11,6 +11,7 @@ import App from './App';
 import LocalDevModelClient from './LocalDevModelClient';
 import './components/import-components';
 import './index.css';
+import './styles/layout.css';
 import './styles/hero.css'
 
 const modelManagerOptions = {};

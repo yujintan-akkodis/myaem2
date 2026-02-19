@@ -1,0 +1,20 @@
+/* Full width container override for SPA templates */
+.is-fullwidth {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0 !important;
+}
+
+/* 2. Make the inner teaser full width as well */
+.is-fullwidth .cmp-teaser {
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+/* 3. Prevent the image from being constrained */
+.is-fullwidth .cmp-image__image {
+  width: 100vw !important;
+  height: auto;
+}
