@@ -36,6 +36,19 @@
   z-index: 2;
 }
 
+
+.cmp-teaser--hero .cmp-teaser__pretitle {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 900;
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  font-family: "BebasNeue", sans-serif;
+}
+
 /* Hero title */
 .cmp-teaser--hero .cmp-teaser__title {
   margin: 0;
