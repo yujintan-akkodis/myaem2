@@ -1,0 +1,83 @@
+/* === FULL‑BLEED HEADER WRAPPER (stretches to viewport width) === */
+.afrs-header {
+  /* Layout: logo | nav */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 24px;
+
+  /* Remove any inner spacing so the bar touches edges */
+  padding: 0;
+  background: #fff;
+
+  /* Full-bleed trick when header sits inside a centered container:
+     Pull the wrapper out to the viewport edges. */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Optional: add a thin top stripe, if you want a visual cap
+.afrs-header { border-top: 4px solid #1a73e8; }
+*/
+
+/* === LOGO (Image component or placeholder) === */
+.afrs-header .cmp-image,
+.afrs-header .cmp-image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 10%;
+  padding-left: 20px;
+
+  object-fit: stretch;    /* keep if using image */
+}
+
+/* Ensure the Core Navigation container grows to fill the row */
+.afrs-header .cmp-navigation {
+  width: 100%;
+}
+
+/* === NAVIGATION (4 equal tabs, fill all remaining space) === */
+.afrs-header .cmp-navigation__group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f6f6f6;
+}
+
+.afrs-header .cmp-navigation__item {
+  text-align: center;
+}
+
+.afrs-header .cmp-navigation__item-link {
+  display: block;
+  padding: 12px 16px;
+  font: 800 14px/1.2 sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  background: #f6f6f6;
+  border-left: 1px solid #ddd;
+}
+
+/* FIXED TYPO: was .afr-header — needs the s */
+.afrs-header .cmp-navigation__item:first-child .cmp-navigation__item-link {
+  border-left: none;
+}
+
+.afrs-header .cmp-navigation__item-link:hover {
+  background: #ff661c;
+}
+
+/* Hide navigational nav if present */
+.afrs-header .cmp-languagenavigation__item {
+  display: none;
+}
+
+/* Hide language nav if present */
+.afrs-header .cmp-navigation__item {
+  display: none;
+}
