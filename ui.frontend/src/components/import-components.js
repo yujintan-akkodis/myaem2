@@ -44,7 +44,7 @@ import {
     TeaserV1,TeaserV1IsEmptyFn,
     DownloadV1,DownloadV1IsEmptyFn,
     SeparatorV1,SeparatorV1IsEmptyFn,
-    ListV2,ListV2IsEmptyFn
+    ListV2,ListV2IsEmptyFn, Embed
 } from '@adobe/aem-core-components-react-base';
 
 //lazyload / code splitting example of an internal component
@@ -58,7 +58,7 @@ const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-reac
 MapTo('myaem2/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
 MapTo('myaem2/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
 MapTo('myaem2/components/separator')(SeparatorV1, {isEmpty: SeparatorV1IsEmptyFn});
-
+MapTo('core/wcm/components/embed/v1/embed')(Embed);
 MapTo('myaem2/components/button')(ButtonV1, {isEmpty: ButtonV1IsEmptyFn});
 MapTo('myaem2/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
 MapTo('myaem2/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
