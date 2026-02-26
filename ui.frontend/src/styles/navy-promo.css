@@ -1,0 +1,20 @@
+.aem-GridColumn.navy-promo {
+    background-color: #00163b;
+
+}
+
+.aem-GridColumn.navy-promo h1{
+    font-family: "BebasNeue", sans-serif!important;
+    color: white;
+    letter-spacing: .1em;
+    /* font-size: 8rem; */
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 1;
+}
+
+.aem-GridColumn.navy-promo p {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1.1;
+}

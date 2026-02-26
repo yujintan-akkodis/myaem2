@@ -6,8 +6,8 @@
   margin-left: 50%;
   transform: translateX(-50%);
   background: #f35c12;
-  border-radius: 24px;
-  padding: 60px 40px;
+  border-radius:0 0 24px 24px;
+  /* padding: 60px 40px; */
   box-sizing: border-box;
 }
 
@@ -75,6 +75,7 @@
   font-size: clamp(28px, 4vw, 42px);
   max-width: 12ch;
   color: #111;
+  padding-top:30px;
 }
 
 .aem-GridColumn.promo-card p {
